@@ -1,19 +1,19 @@
-# Para inserir sessões no código: Ctrl + Shift + R
+# Para inserir sessÃµes no cÃ³digo: Ctrl + Shift + R
 # Computador do Rafa ------------------------------------------------------
 setwd("C:/Users/rafae/Documents/GitHub/TCC-TimeSeries")
 # Computador do Igor ------------------------------------------------------
 
-# 1) Função geradora de séries temporais ----------------------------------
-# É preciso fazer uma função que gere as séries e armazene em formato
-# de lista. A função deve ter pelo menos três argumentos:
-# - Um dataframe com os parâmetros para a série temporal
-# - Tamanho da série
-# - Número de repetições
+# 1) FunÃ§Ã£o geradora de sÃ©ries temporais ----------------------------------
+# Ã‰ preciso fazer uma funÃ§Ã£o que gere as sÃ©ries e armazene em formato
+# de lista. A funÃ§Ã£o deve ter pelo menos trÃªs argumentos:
+# - Um dataframe com os parÃ¢metros para a sÃ©rie temporal
+# - Tamanho da sÃ©rie
+# - NÃºmero de repetiÃ§Ãµes
 
 geradora_ARMA <- function(parametros,n,m,order_arma="ARMA"){
-# 1) parâmetros: data frame com os parâmetros
-# 2) n: tamanho de cada série temporal
-# 3) m: número de simulações
+# 1) parÃ¢metros: data frame com os parÃ¢metros
+# 2) n: tamanho de cada sÃ©rie temporal
+# 3) m: nÃºmero de simulaÃ§Ãµes
   library(magrittr)
   
   if(order_arma=="ARMA"){
@@ -79,4 +79,4 @@ parametros_func <- function(p,d,q,AR=NULL,MA=NULL){
   return(resultado)
 }
 
-
+# sugestÃ£o de alteraÃ§Ã£o
